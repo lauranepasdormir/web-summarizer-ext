@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Page Summarizer & Translator",
+  "version": "1.0.0",
+  "description": "Extract main content and summarize in a specified language.",
+  "permissions": ["storage", "scripting", "activeTab"],
+  "host_permissions": ["https://*/*", "http://*/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Summarize this page"
+  },
+  "options_page": "options.html",
+  "icons": {}
+}
